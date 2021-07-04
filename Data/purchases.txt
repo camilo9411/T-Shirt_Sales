@@ -1,0 +1,13 @@
+{"productCode":"P4530","firstname":"Camilo","lastname":"Restrepo","city":"Toronto","comment":"","price":500,"quantity":"4","subtotal":2000,"taxes":241,"total":2241}
+{"productCode":"P8976","firstname":"Juan","lastname":"Lopez","city":"Montr\u00e9al","comment":"On sale","price":356.89,"quantity":"3","subtotal":1070.67,"taxes":129.02,"total":1199.69}
+{"productCode":"p8932","firstname":"Santiago","lastname":"Mendez","city":"Vancuver","comment":"","price":1000,"quantity":"1","subtotal":1000,"taxes":120.5,"total":1120.5}
+{"productCode":"P7654","firstname":"Camilo","lastname":"Rodriguez","city":"Ottawa","comment":"","price":999.98,"quantity":"1","subtotal":999.98,"taxes":120.5,"total":1120.48}
+{"productCode":"P4536","firstname":"Juan Pablo","lastname":"Restrepo","city":"New York","comment":"","price":99.99,"quantity":"1","subtotal":99.99,"taxes":12.05,"total":112.04}
+{"productCode":"P7654W","firstname":"Esperanza","lastname":"Rodriguez","city":"Medellin","comment":"Ship to Colombia","price":678.99,"quantity":"2","subtotal":1357.98,"taxes":163.64,"total":1521.62}
+{"productCode":"p3432","firstname":"Diana","lastname":"Restrepo","city":"Bogota","comment":"Ship to USA","price":765.99,"quantity":"8","subtotal":6127.92,"taxes":738.41,"total":6866.33}
+{"productCode":"P7643","firstname":"Sunghee","lastname":"Jang","city":"Ottawa","comment":"","price":786,"quantity":"2","subtotal":1572,"taxes":189.43,"total":1761.43}
+{"productCode":"P7643","firstname":"Sunghee","lastname":"Jang","city":"Ottawa","comment":"","price":786,"quantity":"2","subtotal":1572,"taxes":189.43,"total":1761.43}
+{"productCode":"P7643","firstname":"Sunghee","lastname":"Jang","city":"Ottawa","comment":"","price":786,"quantity":"2","subtotal":1572,"taxes":189.43,"total":1761.43}
+{"productCode":"P7643","firstname":"Sunghee","lastname":"Jang","city":"Ottawa","comment":"","price":786,"quantity":"2","subtotal":1572,"taxes":189.43,"total":1761.43}
+{"productCode":"P7643","firstname":"Sunghee","lastname":"Jang","city":"Ottawa","comment":"","price":786,"quantity":"2","subtotal":1572,"taxes":189.43,"total":1761.43}
+{"productCode":"p3432","firstname":"camilo","lastname":"restrepo","city":"Harris","comment":"dasdas","price":657,"quantity":"1","subtotal":657,"taxes":79.17,"total":736.17}

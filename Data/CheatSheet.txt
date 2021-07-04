@@ -1,0 +1,479 @@
+// WebServer Applications
+
+// Date: 1/15/2021
+
+	X: Cross Plataform
+	Apache: Web Server(server files)
+	MySQL / MariaDB: dataase
+	PHP: PHP Hypertext Preprocessor, Apache MODULE
+	P: Perl (Scripting language)
+	
+	Java: compiled binary / JaveScript: Text file
+	
+	Download XAMPP 7.4.13
+
+	Win+R cmd --> Open commad prompt
+	Always verify the CheckSum // MD5: don't trust it
+	
+	fciv --> max checksum security key --> sha1
+		appfciv(verification) -sha1 file-download
+	SOURCEFORGE.NET --> RHASH for Windows
+		Rhash.exe --sha256 filename
+	sha1sum directory //Linux build in functions
+
+	ls world + tab -> complete file name
+	
+	Microsoft services 
+	WIN+R --> services.msc (Microsoft console)
+	
+	a service is an application/software that can be started
+	even before users log-in to windows.
+	
+	ping --> are you here?
+	
+// Date: 1/20/2021
+	 
+	Windows use \ for folders
+	uses drive letters.
+	cd \ --> relative
+	
+	All others uses /
+	does not use letters
+	/ = root folders(contains all the folders)
+	pwd -> print current directory
+	.. -> go previus folder
+	. -> current folder
+	
+	
+	
+	NEVER USE ABSOLUTE PATHS
+	ALWAYS USE RELATIVE PATHS
+	
+	Files are Case Sensitive letters in other OS.
+	
+	C:\xampp\htdoc
+
+
+// Date: 1/22/2021
+	
+	Events in NOTEPAD
+	
+	é -> Left Alt + 130
+	
+	ctrl + F5 --> Full reload! 
+	F5 only uses memory cache
+	
+	Steps to make accents work -->
+	
+		1- make sure date is in "UTF-8" FORMAT.
+		2- Send the UFT-8 network headers in the response.
+		3- Write <meta..UTF-8> Tag in your HTML Document.
+		
+	declare contants
+	define("name", "value");
+	
+	call contantt -> echo();
+	
+	Debug a variable or constant
+	1- Echo
+	2- var_dump() shows all information about variable
+	3- print_r($variable) shows more readable information.
+	
+	
+
+// Date: 1/27/2021
+	
+	
+	if{}
+	else{}
+	
+	if{}
+	elseif{}
+	elseif{}
+	else{}
+
+	mb_strlen() //checks every character type
+	
+	substr(string,position) //sub string
+	position starts at 0
+	
+	strpos(string,search) // look for position
+	
+	str_replace(search,replace,complete-string)
+	
+	str_ireplace()
+	
+	explode(separator, string)
+	
+	implode(separator,array)
+	
+	strtolower()
+	
+	ord("B") //ORDINAL/NUMERICAL VALUE
+	chr(67) //char that crrespond to an ordinal value
+	
+// Date: 1/29/2021
+	
+	settype(variable,new_data_type) set data_type return true or false
+	gettype(variable) check data_type
+
+	is_numeric() --> check if it is a number
+	
+	is_float()
+	
+	ARRAYS: 
+	
+	myArray = array("1","2","3");
+	
+	#Array with key
+	myArray = array( "Linus"=>"Linux", "Bill" => "Microsoft", "Steve" => "MacOS");
+	
+	
+	#This must be use with index arrays.
+	sort(); --> Modify the original array
+	rsort();-reverse sort
+	
+	asort / arsort --> sort array maintaining the key
+	ksort / krsort  --> sort by key
+	
+	#modify
+	"myarray[index] = ""
+	
+	#add
+	$myarray[]= "" --> add one item.
+	array_push($myarray,"aaa", "bbb")
+	
+	#remove
+	array_pop($myarray) --> delete last element of array
+	array_shift($myArray) --> remove the FIRSTelement of and array
+	
+	DD-WRT // router
+
+
+//Date 02/05/2021 - 02/03/2021
+
+	DateTimeZone('America/Toronto');
+	round(val, presition);
+
+//Date 02/10/2021
+
+	function($parameters,....)
+		&Write and read;
+		= defined default value
+
+	global --> call global variables.
+
+
+	Copyright &copy; JF Parent <?php echo date("Y");?>
+	use classes to defined your css
+
+//Date 02/12/2021
+	
+	json_encode(string) //return json formar
+	
+	json_decode(json_string); //return Object type
+
+//Date 02/17/2021
+
+    //Create a list
+    function createList($myArray){
+        
+        ?>
+        <ol>
+            <?php 
+            
+            foreach($myArray as $element)
+            {
+                
+                ?> 
+                    <li> <?php echo $element; ?></li>
+                <?php
+               
+            }
+            ?>
+        </ol>
+        <?php
+    }
+    
+    
+    //combo box dropdown
+    function createComboBox($myArray){
+        
+        ?>
+        <select>
+            <?php 
+            
+            foreach($myArray as $element)
+            {
+                
+                ?> 
+                    <option> <?php echo $element; ?></option>
+                <?php
+               
+            }
+            ?>
+        </select>
+        <?php
+    }
+	
+    //print imgae
+    function displayAdvertising($fileName){
+       
+        
+        ?> <img class="add" src=" <?php echo FOLDER_ADD . $fileName; ?>"> <?php
+        
+    }
+
+
+
+//Date 02/19/2021
+
+Form methods:
+	GET: for non personal information, it is not secure
+	POST: for personal information
+
+	Form structure...
+        <form action="index.php" method="POST">
+            <P>
+                <label>First Name:</label>
+                <input type="text" name="firstname"><!-- comment -->
+            </P>
+            <input type="submit" value="Save" >
+        </form>
+
+	
+	//Super global variables: it exist anywhere in the file
+	  start -->$_:
+	$_POST
+	$_GET
+	$_REQUEST
+	
+	IF(isset($myarr[position]))
+	submit buttons should have a name "value"
+
+	#Fliters:
+
+	    echo "<br><br>filter #1 SANITIZE STRING;<br>";
+            echo filter_input(INPUT_POST, "firstname", FILTER_SANITIZE_STRING);
+   
+            echo "<br><br>filter #2 SANITIZE FULL SPECIAL CHARS;<br>";
+            echo filter_input(INPUT_POST, "firstname", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+                
+            echo "<br><br>filter #3 htmlspecialchars;<br>";
+            echo htmlspecialchars($_POST["firstname"]);
+                
+            echo "<br><br>filter #4 ;<br>";
+            echo htmlentities($_POST["firstname"]);
+              
+//Date 02/23/2021
+
+	!important --> gives priority to the style
+
+
+//Date 02/24/2021 
+
+	Centralized defect file.
+	send the network header before the <!DOCTYPE>
+	header("location: weburl");
+	exit(); leave the page.
+	died();
+
+//Date 03/03/2021 - 03/05/2021 
+	
+	validation od css code!
+	if(isset($GET['color']))
+	{
+		$color = htmlspecialchars($GET['color']);
+		if($color == red && $color == blue)
+		{
+			#default
+			$color="";
+		}
+	}	
+	
+	$fileHandle = fopen("filename",mode);
+	mode --> w: write (it overrides)
+		 a: append (adds at the end of the file)
+
+	Enter: Windows: CR(13) LF(10) /n
+	       Linux: CR(10)
+	       MacOs: CR(13)
+
+	file_put_contents(FILE_SALES_CAMILO, "testing this sdas\r\n", FILE_APPEND);
+
+	//To read files
+	$fileHandle = fopen(FILE_SALES_CAMILO, "r") or die("cannot open the file");
+        
+        while(!feof($fileHandle))
+        {
+            echo fgets($fileHandle) . "....<br>";
+        }
+        
+        fclose($fileHandle);
+
+	//Errors:
+		error: a problem occured when calling PHP function!
+		exception: a problem occured when running ser function!
+		
+		compiled error: the code could not even start!
+		runtime error: error occurred while code running.
+		logical error: logic in the solved problem.
+		
+		//Error and Exception handling with php
+		set_error_handler("manageError");
+        set_exception_handler("manageException");
+
+//Date 03/10/2021
+
+	//how to set a cookie:
+	function createCookie(){
+    
+    	if(isset($_POST['firstname'])){
+        
+        setcookie('firstname', htmlspecialchars($_POST['firstname']),time()+5,
+                "",     "",     false,      true);
+                #path   #domain #secure     #http
+        header('location: index.php');
+        
+        die();
+    	}	
+	}
+
+
+	//how to delete a cookie:
+	function deleteCookie(){
+		
+		if(isset($_POST['firstname']))
+		{
+			
+			setcookie('firstname', "",time()- 60*60,
+					"",     "",     false,      true);
+					#path   #domain #secure     #http
+			header('location: index.php');
+			
+			die();
+		}
+	}
+	
+	//how to read a cookie:
+	function readCookie(){
+		
+		global $firstname;
+		if(isset($_COOKIE['firstname']))
+		{ 
+			$firstname = htmlspecialchars($_COOKIE['firstname']);
+			
+			setcookie('firstname', $firstname ,time()+5,
+					"",     "",     false,      true);
+			
+		}else {
+			$firstname = "";
+		}
+	}
+	
+//Date 03/12/2021
+	
+	$_SESSION
+	
+	session_start(); //START SESSION.
+	Session_destroy();//DESTROY ALL VARIABLES INSIDE THE SESSION
+    unset($_SESSION['firstname']);/DESTROY PARTICULAR VARIABLE IN SESSION.
+	
+	command linux ssl
+	openssl req -x509 -newkey rsa:4095 -days 365 -keyout jf.key -out jf.crt
+	
+	without password
+	openssl req -x509 -newkey rsa:4095 -days 365 -nodes -keyout jf.key -out jf.crt
+	
+	opt/lampp/etc/
+	sslEngine ON //must be on
+	SSLCertificateFile "change file name"
+	SSLCertificateKeyFile "change file name"
+	
+	you need to pay for creating a certificate! 
+	they never share the private key.
+	
+	req -x509 -newkey rsa:4096 -days 365 -nodes -keyout jf.key -out jf.crt
+	req -x509 -newkey rsa:4096 -days 365 -nodes -keyout jf.key -out jf.crt
+	
+//Date 03/17/2021
+	
+	URL:
+		Network protocol ://    domain(Computer)    URI(uniform resourse identifier)
+								mandatory
+								
+		#being sure user uses secure connection
+			if(!(isset($_SERVER["HTTPS"])) || $_SERVER["HTTPS"] != "on"){
+    
+				header('Location: https://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+				exit();
+				
+			}
+			
+		MySQL --> MariaDB
+		DataBase USERS:
+		#root User Password --> Administrator...
+		making sure the root password is NOT empty
+		
+		
+		never use root in a connection string;
+		
+		C:\xampp\mysql\bin\mysql.exe -u root -p //access to MariaDB
+		
+		C:\>C:\xampp\mysql\bin\mysqladmin.exe -u root password newpassword
+		
+
+// Date: 4/07/2021
+
+		HASH PASSWORD:
+			$encripted_password = password_hash($_POST['PASSWORD'], PASSWORD_DEFAULT);#Default Blowfish...
+			password_verify($password, hash of the password);
+			
+			VARCHAR SHOULD BE --> 255... Because the hash could be longer!!
+			
+			
+// Date: 04/09/2021
+	
+	OBJECTS...
+		#variables é constants : properties
+		
+		#functions: method
+		
+		#public : can be accessed from OUTSIDE of the object
+		#protected:Can only be accessed from objects whcich INHERITS the current class
+		#private:Can only be accessed from inside the current class/object
+	
+	DO NOT USE ECHO ON AN OBJECT.
+	
+	
+// Date: 04/21/2021	
+
+	var xhr = XMLHttpRequest():
+	
+	xhr.open("POST", "page.php");
+	
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+	
+	xhr.onreadystatechange = function()
+	{
+		0 = uninitialaized
+		1 =
+		2 = 
+		3 =
+		4 = complete
+		
+		if(xhr.readyState == 4 && xhr.status == 200)
+		{
+			alert("my page loaded correctly");
+			
+		}
+		
+	}
+	
+	
+	xhr.send();
+	
+	
+	header("Content-type: text/plain");
+	
+	Use html id to get the html elements with the JS.

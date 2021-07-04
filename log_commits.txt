@@ -1,0 +1,69 @@
+2021/02/23: First Commit
+Creation of new project in Neatbeans and the folders: CSS, Images, JavaScript, PHP_Common_Functions
+Creation of new file: PHPfunctions.php
+Creation of functions: createPageTop, createPageNavBar, CreatePageFooter, CreatePageBottom
+Creation de constants: PAGE_HOME_TITLE, PAGE_BUYING_TITLE, FOLDER_IMAGES, FILE_IMAGES_LOGO
+                       FILE_INDEX, FILE_PAGE_ORDERS, FILE_PAGE_ORDERS, FILE_PAGE_BUYING
+Creation of a new file: index.php using functions to create the squema
+Creation of a new file: pageBuying.php using functions to create the squema
+Creation of a new file: pageOrders.php using functions to create the squema
+
+2021/02/26: Second Commit
+Creation of new file style.css, definition of the grid I am implementing in the pages.
+Styling the NavBar(class: header-menu, menu-button).
+Creation of constants: FOLDER_CSS, FILE_CSS_STYLE; Modification of functions: createPageTop
+                       (Addition of div with class container to wrap all the content).
+                       createPageNavBar(addition of classes: header, header-menu, menu-button)
+                       creation of the function: createpageSideBar().
+
+2021/02/26: 3rd Commit
+Camilo Restrepo(1931815)    2021-03-01      
+Addition the logos tho the header and tab website(editing createPageTop() and  createPageNavBar().
+Creation and implementation of the function selectCurrentPage() to be used in header-menu, Creation
+and implementation of function displayAdvertisment() to display random advertismen on the HOME page.
+Creation of constants:FILE_IMAGES_NAVBAR_LOGO,
+Aditions for css classes to the html in order to style the website,
+Styling .menu-button:hover, .current, .logo,.adds, .adds img, .adds .superPromo, .main-index.
+Modification of: .conteiner(setting the grid and adding padding), .header(changin background
+and adding a grid to organize elements in the header), .main(change background to whitesmoke),
+Addition of class .main-index and changed the creations to the advertisment for just the HOME page.
+Addition to images(add1.png to add5.png, Logos) into de folder: Images
+
+
+2021-03-12 : 4th Commit:
+Camilo Restrepo(1931815) - Commit of many days of work Summary
+PHPfunctions.php 
+
+Camilo Restrepo(1931815)    2021-03-06      Creation of the function createBuyingForm() where I configured the output of the form in the browser     
+                                            creating the variables needed for doing the data verification on the user's input.
+Camilo Restrepo(1931815)    2021-03-07      Finished the user's data entry verification when the user submits the form on the function createBuyingForm()
+                                            adding featur of saving in a txt file each sale as a json in each line of the file(purchases.txt)
+                                            Creation of function to read de txt file purchases.txt (readData()) using json_decode to retrive the object from
+                                            the json string and save all purchases in a array making possible to reach the data form any page.
+Camilo Restrepo(1931815)    2021-03-08      Creating of the function createOrdersTable() to create a table with the data already read with the function readData() 
+                                            in the file purchases.txt. Creation of the function for commands through the url readUrlPrintCommand() and 
+                                            readUrlColorCommand().
+Camilo Restrepo(1931815)    2021-03-09      Creation of the function getCurrentTime() to retrive the proper time for writing in the log_erros.txt, Set of the
+                                            php functions set_error_handler("manageError") set_exception_handler("manageException") defininig the functions 
+                                            manageError() and manageException().
+
+index.php
+Camilo Restrepo(1931815)    2021-03-05      Addition the of the logo, and description paragraph in the conteiner main-index. 
+
+pageBuying.php 
+Camilo Restrepo(1931815)    2021-03-05      Rename of the file to pageBuying.php because it was not workin on linux.
+Camilo Restrepo(1931815)    2021-03-08      Creation of container main-buying and  form-container and implementation of the function 
+                                            createBuyingForm().
+Camilo Restrepo(1931815)    2021-03-10      Addition of <a> tag to reference the Cheet sheet used in class.
+
+pageOrders.php 
+Camilo Restrepo(1931815)    2021-03-08      Creation of container main-orders and table-container and implementation of the 
+                                            function createOrdersTable().                                           
+Camilo Restrepo(1931815)    2021-03-10      Addition of <a> tag to reference the Cheet sheet used in class.
+
+style.css
+Camilo Restrepo(1931815)    2021-03-08     Adding style to the main-index content which belongs to index.php main content.
+Camilo Restrepo(1931815)    2021-03-09     Adding style to de main-buying and main-orders which belonges to the pages pageBuying.php and 
+                                            pageOrder.php
+Camilo Restrepo(1931815)    2021-03-10     Creating classes to edit the pages when the a variable "command" is input through the url
+Camilo Restrepo(1931815)    2021-03-11     Creation of the class to style the button to download the cheatSheet.txt
